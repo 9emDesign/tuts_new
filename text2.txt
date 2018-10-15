@@ -1,2 +1,3 @@
 hello again this is another text file to test the tutorial
 Hi! my name is zayno lane and i'm a graphic, web designer.
+developer added this line to text2
