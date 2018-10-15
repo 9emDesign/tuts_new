@@ -1,4 +1,3 @@
-[internal link][1]
 # heading 1
 ## heading 2
 ### heading3
@@ -38,6 +37,6 @@ sample code for paragraph
 ```html
 <p>paragraph lorem ipsum</p>
 ```
-[1]|zayno|robert|
+   |zayno|robert|
    |---  |---   |
    |zayno70@gmail.com|piskado@hotmail.com|
