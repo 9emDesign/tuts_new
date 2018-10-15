@@ -1,2 +1,3 @@
 Hello all this is a text file for tutorial purposes, this is meant to teach me the basics and intermediate skills of github.
 Just some random text to modify text1
+hello again here is another line for the DEV1 branch
