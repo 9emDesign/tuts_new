@@ -1,3 +1,1 @@
-hallo hier komt een andere webdesigner om dit file te maken
-ipsum lorem dolor sit amet
-the umptheen batman and robin crawled up the stairs of the massive skyscraper.
+de nieuwe web designer was added in production, he will work on the login form.
