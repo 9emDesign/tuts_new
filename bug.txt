@@ -1,3 +1,3 @@
 this file we track all bugs in the website
 bug1: top menubar shows menu but doesn't have a background.
-bug2: login form verivication gives error.
+just for test
