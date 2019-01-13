@@ -1,0 +1,64 @@
+
+alias graph="git log --all --decorate --oneline --graph"
+
+git log --pretty=format:"%h - %an -  %ae: %ar : %s" --since=7.day
+----------------------------------------------------------------------------
+ctrl + v - visual block mode
+shift + v - visual line mode
+v - visual mode
+-----------------------------------------------------------------------------
+:tabnew For a new tab
+gT For previous tab
+gt For next tab
+:tabnew [filename] - opens new tab with file
+[n]yw - number yank word
+:noh - clears search highlight
+gq > - hard wordwrap
+0 - to the beginning of the line
+$ -  to the end of the line
+{ - move up a paragraph
+} - move down a paragraph
+( - move up a sentence
+) - move down a sentence
+:qa - quit all
+gi - to open in a split window and staying in nerdtree window
+byw - copy word under cursor 
+:sb [3] - split buffer and open
+:ls - list buffer
+L - last line
+M - middle line
+H - top line
+zz - center line
+zt - put line to top
+ctrl e - scroll down
+ctrl y - scroll up
+:BD - buffer delete
+:BW - buffer wipe
+:BUN - bufferunload
+:BB - buffer back/previous
+:BF - buffer forward
+------------------------------------------------------------------------------
+ctrl w L - move split window to right
+ctrl w H - move split window to left
+ctrl w j - move split window down
+ctrl w K - move split window up
+------------------------------------------------------------------------------
+;CtrlPBuffer - opens ctrlp in buffer mode
+:CtrlPMRU - opens ctrlp in MRU mode
+:CtrlP - opens ctrlp in file mode
+:CtrlP [dir] - opens ctrlp in directory
+ctrl p - controlp
+ctrl x - open ctrl p in vertical window
+ctrl t - open ctrl p in new tab 
+-----------------------------------------------------------------------------
+path vim8 - C:\Program Files\Git\usr\share\vim\vim81
+-----------------------------------------------------------------------------
+:e -  open vim files -  space then tab, then right arrow to select file
+:split - horizontal split
+:chdir - change directory
+-----------------------------------------------------------------------------
+vundle:
+plugin install - :PluginInstall
+plugin upate - :BundleUpdate
+-----------------------------------------------------------------------------
+
