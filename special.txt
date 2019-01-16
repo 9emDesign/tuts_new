@@ -7,10 +7,15 @@ ctrl + v - visual block mode
 shift + v - visual line mode
 v - visual mode
 -----------------------------------------------------------------------------
-:tabnew For a new tab
+sessions:
+:mks ~/.vim/session/test.vim - to save  session (close nerdtree before saving!)
+vim -S ~/.vim/session/test.vim - to recall session
+:mks! ~/.vim/session/test.vim - to replace current saved session
+-----------------------------------------------------------------------------
+:tabnew - For a new tab
+:tabnew [filename] - For a new tab with  selected file (first :chdir)
 gT For previous tab
 gt For next tab
-:tabnew [filename] - opens new tab with file
 [n]yw - number yank word
 :noh - clears search highlight
 gq > - hard wordwrap
@@ -37,6 +42,8 @@ ctrl y - scroll up
 :BUN - bufferunload
 :BB - buffer back/previous
 :BF - buffer forward
+ctrl t - indent
+ctrl d - unindent
 ------------------------------------------------------------------------------
 ctrl w L - move split window to right
 ctrl w H - move split window to left
