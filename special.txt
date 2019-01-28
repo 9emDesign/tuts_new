@@ -1,4 +1,4 @@
-
+Github:
 alias graph="git log --all --decorate --oneline --graph"
 
 git log --pretty=format:"%h - %an -  %ae: %ar : %s" --since=7.day
@@ -10,13 +10,25 @@ v - visual mode
 sessions:
 :mks ~/.vim/session/test.vim - to save  session (close nerdtree before saving!)
 vim -S ~/.vim/session/test.vim - to recall session
-:mks! ~/.vim/session/test.vim - to replace current saved session
+:mks! ~/.vim/session/test.vim - to update current saved session
+-----------------------------------------------------------------------------
+registers:
+:reg - to list registers
+:WipeReg - wipe clear register
+"0p -"9p - recall numbered registers
+"ap - recall register "a" and paste after cursor
+"aP - recall register "a" and paste before cursor
+"ay - yank the word  to the register "a"
+"a dd" - delete text into register "a" (cut)
+"Ay - append to register "a""
+"a[3]yw - yank 3 words into register "a"
+"a[3]dw - delete 3 words into register "a" (cut)
 -----------------------------------------------------------------------------
 :tabnew - For a new tab
 :tabnew [filename] - For a new tab with  selected file (first :chdir)
 gT For previous tab
 gt For next tab
-[n]yw - number yank word
+[n]yw -  yank [3] words 
 :noh - clears search highlight
 gq > - hard wordwrap
 0 - to the beginning of the line
@@ -28,8 +40,12 @@ $ -  to the end of the line
 :qa - quit all
 gi - to open in a split window and staying in nerdtree window
 byw - copy word under cursor 
-:sb [3] - split buffer and open
+b[n]yw - copy [3] words under cursor
+:sb [3] - split and open buffer number 3
 :ls - list buffer
+:bd - buffer delete (closes buffer)
+:bp - buffer previous
+:bn - buffer next
 L - last line
 M - middle line
 H - top line
@@ -37,13 +53,24 @@ zz - center line
 zt - put line to top
 ctrl e - scroll down
 ctrl y - scroll up
+NERDTree m - to show menu of selections nerdtree
+NERDTree cd - changes current directory to current working directory
+-------------------------------------------------------------------------------
+clear window buffer(while maintaining window):
 :BD - buffer delete
 :BW - buffer wipe
 :BUN - bufferunload
 :BB - buffer back/previous
 :BF - buffer forward
-ctrl t - indent
-ctrl d - unindent
+-------------------------------------------------------------------------------
+ctrl+t - indent
+ctrl+d - unindent
+zfat - manual folding of tags
+zo - open fold
+zc - close fold
+zR - open all folds
+zM = close all folds
+[[  ]] - markers for fold
 ------------------------------------------------------------------------------
 ctrl w L - move split window to right
 ctrl w H - move split window to left
