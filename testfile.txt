@@ -1,1 +1,2 @@
 test file with some dummy text just to fill
+here is some extra text line just for the sake of it.
