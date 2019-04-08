@@ -10,7 +10,7 @@ v - visual mode
 sessions:
 :mks ~/.vim/session/test.vim - to save  session (close nerdtree before saving!)
 vim -S ~/.vim/session/test.vim - to recall session
-:mks! ~/.vim/session/test.vim - to update current saved session
+:mks! ~/.vim/session/test.vim - to overwrite current saved session
 -----------------------------------------------------------------------------
 registers:
 :reg - to list registers
@@ -18,14 +18,16 @@ registers:
 "0p -"9p - recall numbered registers
 "ap - recall register "a" and paste after cursor
 "aP - recall register "a" and paste before cursor
-"ay - yank the word  to the register "a"
-"a dd" - delete text into register "a" (cut)
-"Ay - append to register "a""
+shift+v "ay - yank the word  to the register "a"
+shift+v "a dd" - delete text into register "a" (cut)
+shift+v "Ay - append to register "a""
 "a[3]yw - yank 3 words into register "a"
 "a[3]dw - delete 3 words into register "a" (cut)
 -----------------------------------------------------------------------------
+General commands:
 :tabnew - For a new tab
 :tabnew [filename] - For a new tab with  selected file (first :chdir)
+:tabm0 - moves tab to the front
 gT For previous tab
 gt For next tab
 [n]yw -  yank [3] words 
@@ -37,6 +39,9 @@ $ -  to the end of the line
 } - move down a paragraph
 ( - move up a sentence
 ) - move down a sentence
+ci<option> - change in option:w,",',t,{,<,(
+ctrl+w _ - maximizes current window
+ctrl+w = - equals windows
 :qa - quit all
 gi - to open in a split window and staying in nerdtree window
 byw - copy word under cursor 
@@ -46,6 +51,7 @@ b[n]yw - copy [3] words under cursor
 :bd - buffer delete (closes buffer)
 :bp - buffer previous
 :bn - buffer next
+:badd [filename]- opens file without switching to new file
 L - last line
 M - middle line
 H - top line
@@ -53,6 +59,12 @@ zz - center line
 zt - put line to top
 ctrl e - scroll down
 ctrl y - scroll up
+:MRU- most recent used files
+shift+v <tab> - abbreviation in emmet vim
+% - match tags
+:%/search/replace/g - search and replace the whole file
+:%/search/replace/gc - search and replace the whole file with confirm
+:4,7s/search/repace/g - search and replace between line number 4 -7
 NERDTree m - to show menu of selections nerdtree
 NERDTree cd - changes current directory to current working directory
 -------------------------------------------------------------------------------
@@ -61,7 +73,7 @@ clear window buffer(while maintaining window):
 :BW - buffer wipe
 :BUN - bufferunload
 :BB - buffer back/previous
-:BF - buffer forward
+bBF - buffer forward
 -------------------------------------------------------------------------------
 ctrl+t - indent
 ctrl+d - unindent
@@ -72,18 +84,18 @@ zR - open all folds
 zM = close all folds
 [[  ]] - markers for fold
 ------------------------------------------------------------------------------
-ctrl w L - move split window to right
-ctrl w H - move split window to left
-ctrl w j - move split window down
-ctrl w K - move split window up
+ctrl+w L - move split window to right
+ctrl+w H - move split window to left
+ctrl+w j - move split window down
+ctrl+w K - move split window up
 ------------------------------------------------------------------------------
 ;CtrlPBuffer - opens ctrlp in buffer mode
 :CtrlPMRU - opens ctrlp in MRU mode
 :CtrlP - opens ctrlp in file mode
 :CtrlP [dir] - opens ctrlp in directory
-ctrl p - controlp
-ctrl x - open ctrl p in vertical window
-ctrl t - open ctrl p in new tab 
+ctrl+p - controlp
+ctrl+x - open ctrl p in vertical window
+ctrl+t - open ctrl p in new tab 
 -----------------------------------------------------------------------------
 path vim8 - C:\Program Files\Git\usr\share\vim\vim81
 -----------------------------------------------------------------------------
