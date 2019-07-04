@@ -1,6 +1,7 @@
 git commands:
 git status - get the status of git
 git add . - add all files to be tracked
+git add -A - add all files to the staging area
 git add [filename] - adds the file to be tracked
 git commit - commit to the staging area
 git commit -m - commit witha message
@@ -14,6 +15,7 @@ git push - send updated to your remote repository
 git diff - see the difference between working tree and staging area
 git diff --staged - shows the difference between staging area and commit history
 git rm [filename] - remove file from working tree and staging area
+rm -rf .git - removes .git hidden directory
 git checkout -- [filename] - restore file from staging area
 git reset HEAD [filename] - restore  staging area with latest committed file
 git checkout {hash} -- [filename] - restore from earlier commit
