@@ -28,6 +28,8 @@ git branch -v - shows long version of available branches
 git branch -a - shows all branches including remotes
 git merge [branch name] - merge branch with master branch
 git branch --merged -show merged branches
+git branch --no-merged -To see all the branches that contain work you haven’t
+	yet merged
 git branch [branch name] -d - delete branch (local)
 git push origin :[branch name] - delete branch (remote)
 -------------------------------------------------------------------------------
