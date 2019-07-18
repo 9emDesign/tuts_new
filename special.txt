@@ -1,7 +1,13 @@
 Github:
+<<<<<<< HEAD
 alias graph="git log --all --decorate --oneline --graph"
 
 git log --pretty=format:"%h - %an -  %ae: %ar: %s" --since=7.day
+=======
+alias graph="git log --all --decorate --oneline --graph"
+
+git log --pretty=format:"%h - %an -  %ae: %ar : %s" --since=7.day
+>>>>>>> 2fd276afef79a7ebc615bf610b55493e6537cf72
 ----------------------------------------------------------------------------
 ctrl + v - visual block mode
 shift + v - visual line mode
@@ -14,7 +20,11 @@ vim -S ~/.vim/session/test.vim - to recall session
 -----------------------------------------------------------------------------
 registers:
 :reg - to list registers
+<<<<<<< HEAD
 :WipeReg - wipe clean register
+=======
+:WipeReg - wipe clear register
+>>>>>>> 2fd276afef79a7ebc615bf610b55493e6537cf72
 "0p -"9p - recall numbered registers
 "ap - recall register "a" and paste after cursor
 "aP - recall register "a" and paste before cursor
@@ -25,6 +35,7 @@ shift+v "Ay - append to register "a""
 "a[3]dw - delete 3 words into register "a" (cut)
 -----------------------------------------------------------------------------
 General commands:
+<<<<<<< HEAD
 i - insert text at cursor position
 I - insert at start of line
 a - insert after cursor
@@ -40,13 +51,19 @@ B - backward to beginning of next word with space
 e - forward to next end of word
 E - forward to next end of word with space
 C - remove characters till the end of line
+=======
+>>>>>>> 2fd276afef79a7ebc615bf610b55493e6537cf72
 :tabnew - For a new tab
 :tabnew [filename] - For a new tab with  selected file (first :chdir)
 :tabm0 - moves tab to the front
 gT For previous tab
 gt For next tab
 [n]yw -  yank [3] words 
+<<<<<<< HEAD
 :nohl - clears search highlight
+=======
+:noh - clears search highlight
+>>>>>>> 2fd276afef79a7ebc615bf610b55493e6537cf72
 gq > - hard wordwrap
 0 - to the beginning of the line
 $ -  to the end of the line
@@ -54,7 +71,11 @@ $ -  to the end of the line
 } - move down a paragraph
 ( - move up a sentence
 ) - move down a sentence
+<<<<<<< HEAD
 ci<option> - change in option:w,",',t,{,<,(,[
+=======
+ci<option> - change in option:w,",',t,{,<,(
+>>>>>>> 2fd276afef79a7ebc615bf610b55493e6537cf72
 ctrl+w _ - maximizes current window
 ctrl+w = - equals windows
 :qa - quit all
@@ -62,7 +83,10 @@ gi - to open in a split window and staying in nerdtree window
 byw - copy word under cursor 
 b[n]yw - copy [3] words under cursor
 :sb [3] - split and open buffer number 3
+<<<<<<< HEAD
 :b [buffer name or number] - open buffer [name] or buffer [number]
+=======
+>>>>>>> 2fd276afef79a7ebc615bf610b55493e6537cf72
 :ls - list buffer
 :bd - buffer delete (closes buffer)
 :bp - buffer previous
@@ -76,19 +100,27 @@ zt - put line to top
 ctrl e - scroll down
 ctrl y - scroll up
 :MRU- most recent used files
+<<<<<<< HEAD
 shift+v <tab> - surround new tag in emmet vim
 :% - match tags
+=======
+shift+v <tab> - abbreviation in emmet vim
+% - match tags
+>>>>>>> 2fd276afef79a7ebc615bf610b55493e6537cf72
 :%/search/replace/g - search and replace the whole file
 :%/search/replace/gc - search and replace the whole file with confirm
 :4,7s/search/repace/g - search and replace between line number 4 -7
 NERDTree m - to show menu of selections nerdtree
 NERDTree cd - changes current directory to current working directory
+<<<<<<< HEAD
 NERDTree i - opens selected file in  horizontal split buffer
 NERDTree gi -opens selected file in horizontal split buffer but leaves cursor
 in NERDTree 
 rm -rf [directory] - removes directory
 rm [file] - removes file
 u - undo
+=======
+>>>>>>> 2fd276afef79a7ebc615bf610b55493e6537cf72
 -------------------------------------------------------------------------------
 clear window buffer(while maintaining window):
 :BD - buffer delete
@@ -117,7 +149,11 @@ ctrl+w K - move split window up
 :CtrlP [dir] - opens ctrlp in directory
 ctrl+p - controlp
 ctrl+x - open ctrl p in vertical window
+<<<<<<< HEAD
 :CtrlP -> ctrl+t - open ctrl p in new tab 
+=======
+ctrl+t - open ctrl p in new tab 
+>>>>>>> 2fd276afef79a7ebc615bf610b55493e6537cf72
 -----------------------------------------------------------------------------
 path vim8 - C:\Program Files\Git\usr\share\vim\vim81
 -----------------------------------------------------------------------------
