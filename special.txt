@@ -49,12 +49,12 @@ gt For next tab
 gq > - hard wordwrap
 0 - to the beginning of the line
 $ -  to the end of the line
+:[linenmber]# -takes you to the specified line nmber
 { - move up a paragraph
 } - move down a paragraph
 ( - move up a sentence
 ) - move down a sentence
 ci<option> - change in option:w,",',t,{,<,(,[
-ci<option> - change in option:w,",',t,{,<,(
 ctrl+w _ - maximizes current window
 ctrl+w = - equals windows
 :qa - quit all
@@ -77,9 +77,8 @@ ctrl e - scroll down
 ctrl y - scroll up
 :MRU- most recent used files
 shift+v <tab> - surround new tag in emmet vim
-:% - match tags
-:%/search/replace/g - search and replace the whole file
-:%/search/replace/gc - search and replace the whole file with confirm
+:%s/search/replace/g - search and replace the whole file
+:%s/search/replace/gc - search and replace the whole file with confirm
 :4,7s/search/repace/g - search and replace between line number 4 -7
 NERDTree m - to show menu of selections nerdtree
 NERDTree cd - changes current directory to current working directory
