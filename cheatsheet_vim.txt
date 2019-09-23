@@ -94,7 +94,7 @@ clear window buffer(while maintaining window):
 :BW - buffer wipe
 :BUN - bufferunload
 :BB - buffer back/previous
-bBF - buffer forward
+:BF - buffer forward
 -------------------------------------------------------------------------------
 ctrl+t - indent
 ctrl+d - unindent
@@ -117,7 +117,6 @@ ctrl+w K - move split window up
 ctrl+p - controlp
 ctrl+x - open ctrl p in vertical window
 :CtrlP -> ctrl+t - open ctrl p in new tab 
-ctrl+t - open ctrl p in new tab 
 -----------------------------------------------------------------------------
 path vim8 - C:\Program Files\Git\usr\share\vim\vim81
 -----------------------------------------------------------------------------
