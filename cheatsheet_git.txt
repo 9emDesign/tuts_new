@@ -4,12 +4,12 @@ git add . - add all files to be tracked
 git add -A - add all files to the staging area
 git add [filename] - adds the file to be tracked
 git commit - commit to the staging area
-git commit -m - commit witha message
+git commit -m - commit with a message
 git commit -v - puts the diff of your change in the editor so you can see
 exactly what changes you’re committing to.
 git log - get all commit logs
 git init - initialize a new git repository on local machine
-git clone - geta remote repositor to your local machine
+git clone - geta remote repository to your local machine
 git pull - get updates from your remote repository
 git push - send updated to your remote repository
 git diff - see the difference between working tree and staging area
@@ -39,5 +39,5 @@ git remote -v - list full path
 git remote add [name] {git remote address} - add a new remote
 git remote remove [remote name] - remove remote
 git pull - update and merge repository
-fork - creates a cop of a repository in your account
+fork - creates a copy of a repository in your account
 

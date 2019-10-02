@@ -18,7 +18,7 @@ registers:
 "ap - recall register "a" and paste after cursor
 "aP - recall register "a" and paste before cursor
 shift+v "ay - yank the word  to the register "a"
-shift+v "a dd" - delete text into register "a" (cut)
+shift+v "a dd - delete text into register "a" (cut)
 shift+v "Ay - append to register "a""
 "a[3]yw - yank 3 words into register "a"
 "a[3]dw - delete 3 words into register "a" (cut)
