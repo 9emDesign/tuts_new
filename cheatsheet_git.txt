@@ -20,6 +20,11 @@ git checkout -- [filename] - restore file from staging area
 git reset HEAD [filename] - restore  staging area with latest committed file
 git checkout {hash} -- [filename] - restore from earlier commit
 -------------------------------------------------------------------------------
+to push a local repo to remote repo:
+make repo on github.com
+then copy command: git remote add origin url(github repo)
+then git push origin master
+-------------------------------------------------------------------------------
 merging and branching:
 git branch {branch name} - create a new branch
 git checkout [branch name] - change to new branch

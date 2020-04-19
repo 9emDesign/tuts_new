@@ -15,8 +15,8 @@ registers:
 :reg - to list registers
 :WipeReg - wipe clean register
 "0p -"9p - recall numbered registers
-"ap - recall register "a" and paste after cursor
-"aP - recall register "a" and paste before cursor
+"ap - recall register "a" and paste before cursor
+"aP - recall register "a" and paste after cursor
 shift+v "ay - yank the word  to the register "a"
 shift+v "a dd - delete text into register "a" (cut)
 shift+v "Ay - append to register "a""
@@ -49,7 +49,7 @@ gt For next tab
 gq > - hard wordwrap
 0 - to the beginning of the line
 $ -  to the end of the line
-:[linenmber]# -takes you to the specified line nmber
+:[linenumber]# -takes you to the specified line nmber
 { - move up a paragraph
 } - move down a paragraph
 ( - move up a sentence
@@ -73,8 +73,8 @@ M - middle line
 H - top line
 zz - center line
 zt - put line to top
-ctrl e - scroll down
-ctrl y - scroll up
+ctrl e -   down
+ctrl y -   up
 :MRU- most recent used files
 shift+v <tab> - surround new tag in emmet vim
 :%s/search/replace/g - search and replace the whole file
@@ -128,4 +128,5 @@ vundle:
 plugin install - :PluginInstall
 plugin upate - :BundleUpdate
 -----------------------------------------------------------------------------
-
+emmet:
+html:5 tab
