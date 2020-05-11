@@ -1,7 +1,4 @@
-Github:
-alias graph="git log --all --decorate --oneline --graph"
-git log --pretty=format:"%h - %an -  %ae: %ar: %s" --since=7.day
-----------------------------------------------------------------------------
+selections:
 ctrl + v - visual block mode
 shift + v - visual line mode
 v - visual mode
@@ -59,7 +56,7 @@ ctrl+w _ - maximizes current window
 ctrl+w = - equals windows
 :qa - quit all
 gi - to open in a split window and staying in nerdtree window
-byw - copy word under cursor 
+w - copy word under cursor 
 b[n]yw - copy [3] words under cursor
 :sb [3] - split and open buffer number 3
 :b [buffer name or number] - open buffer [name] or buffer [number]
@@ -77,6 +74,7 @@ ctrl e -   down
 ctrl y -   up
 :MRU- most recent used files
 shift+v <tab> - surround new tag in emmet vim
+/[search name] - search
 :%s/search/replace/g - search and replace the whole file
 :%s/search/replace/gc - search and replace the whole file with confirm
 :4,7s/search/repace/g - search and replace between line number 4 -7
