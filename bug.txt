@@ -3,3 +3,4 @@ this is just text jargon
 bug1: top menubar shows menu but doesn't have a background.
 just for test not for reading, but this line is just a filler.
 hallo
+test test breaky breaky
