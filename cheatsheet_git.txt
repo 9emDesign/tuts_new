@@ -1,28 +1,30 @@
 git log:
 alias graph="git log --all --decorate --oneline --graph"
-git log --pretty=format:"%h - %an -  %ae: %ar: %s" --since=7.day
+git log --pretty=format:"%h - %an -  %ae: %ar: %s" --since=14.day
 -----------------------------------------------------------------------------
 git commands:
 git status - get the status of git
 git add . - add all files to be tracked
 git add -A - add all files to the staging area
-git add [filename] - adds the file to be tracked
+git add [filename] [multiple filename]- adds the file to be tracked
 git commit - commit to the staging area
 git commit -m - commit with a message
 git commit -v - puts the diff of your change in the editor so you can see
 exactly what changes you’re committing to.
 git log - get all commit logs
 git init - initialize a new git repository on local machine
-git clone - geta remote repository to your local machine
+git clone url()- geta remote repository to your local machine
 git pull - get updates from your remote repository
-git push - send updated to your remote repository
+git push - send updates to your remote repository
 git diff - see the difference between working tree and staging area
 git diff --staged - shows the difference between staging area and commit history
 git rm [filename] - remove file from working tree and staging area
+git mv [filename] [new filename] - move or rename files
+git show
 rm -rf .git - removes .git hidden directory
-git checkout -- [filename] - restore file from staging area
-git reset HEAD [filename] - restore  staging area with latest committed file
-git checkout {hash} -- [filename] - restore from earlier commit
+git restore --staged [filename] - restore file from staging area
+git restore  [filename] - discarding local changes
+git restore --source={hash} [filename] - restore from earlier commit
 -------------------------------------------------------------------------------
 to push a local repo to remote repo:
 make repo on github.com
@@ -38,7 +40,7 @@ git branch -a - shows all branches including remotes
 git merge [branch name] - merge branch with master branch
 git branch --merged -show merged branches
 git branch --no-merged -To see all the branches that contain work you haven’t
-	yet merged
+yet merged
 git branch [branch name] -d - delete branch (local)
 git push origin :[branch name] - delete branch (remote)
 -------------------------------------------------------------------------------

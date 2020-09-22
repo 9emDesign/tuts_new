@@ -12,6 +12,7 @@ registers:
 :reg - to list registers
 :WipeReg - wipe clean register
 "0p -"9p - recall numbered registers
+"ap - zp" - recall letter registers
 "ap - recall register "a" and paste before cursor
 "aP - recall register "a" and paste after cursor
 shift+v "ay - yank the word  to the register "a"
@@ -86,6 +87,8 @@ in NERDTree
 rm -rf [directory] - removes directory
 rm [file] - removes file
 u - undo
+gg - up to top of document
+G - down to end of doument
 -------------------------------------------------------------------------------
 clear window buffer(while maintaining window):
 :BD - buffer delete
