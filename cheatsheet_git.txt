@@ -16,6 +16,8 @@ git log --oneline -all commites in one line
 git init - initialize a new git repository on local machine
 git clone url()- geta remote repository to your local machine
 git pull - get updates from your remote repository
+git pull --rebase - get updates from your remote repository and rebase
+git rebase --continue - to continue rebasing process
 git push - send updates to your remote repository
 git diff - see the difference between working tree and staging area
 git diff --staged - shows the difference between staging area and commit history
