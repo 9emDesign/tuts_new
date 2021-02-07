@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html><head> <title>jQuery goes to DOM-ville</title>
+<style>
+#change_me {
+position: absolute;
+top: 100px;
+left: 400px;
+font: 24px arial;}
+#move_up #move_down #color #disappear {
+padding: 5px;}
+</style>
+<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+</head>
+<body>
+<button id="color">Change Color</button>
+<p>Change color!</p>
+<script>
+$(document).ready(function(){
+$('#color').click(function(){
+$('p').css('color','blue');
+ });
+});
+</script>
+</body>
+</html>

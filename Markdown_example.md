@@ -41,6 +41,11 @@ sample code for paragraph
 ```html
 <p>paragraph lorem ipsum</p>
 ```
+```javascript
+function TestMarkdown(){
+  console.log('hello');
+}
+
 [1]|zayno|robert|
    |---  |---   |
    |zayno70@gmail.com|piskado@hotmail.com|
