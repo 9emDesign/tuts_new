@@ -1,0 +1,8 @@
+what is your name?
+how old are you?
+what is your favourite super hero?
+
+
+the aim of this game is to ask the user his/her name and age
+the game will then evaluate if the user is old enough to play
+if the user is younger than 10 it will load a different game than if older than 12 and also if the user is older than 18.Next it will ask the user for a superhero,and also it will ask to select a villan.The game will begin by asking the user to select a action (kick,punch,zap) 18+(kick,punch,zap,slash)every action has some points the villan will then do it's action and after that it will substract from the user's points.
