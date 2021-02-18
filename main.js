@@ -1,4 +1,6 @@
-//jshint esversion:6
+import {sayHi} from './sayHi.js';
+
+://jshint esversion:6
 //object
 // let person={
 //   firstName:'Zayno',
@@ -361,4 +363,9 @@ let sayhello = new Person(name,lastname,age,height);
 sayhello.hello();
  */
 let message = document.getElementById('greenPlanet');
+<<<<<<< HEAD
 message.innerHTML = 'Alert:Attack by red laser!';
+=======
+message.innerHTML = 'Alert:Attack by red laser!';
+>>>>>>> f847a84 (test authy commit)
+>>>>>>> temp
