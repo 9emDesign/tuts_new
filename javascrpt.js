@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import { myfunction } from "./function.js";
+=======
+//jshint esversion:6
+>>>>>>> 5ec85684e9971697205e90910353a74d37520a89
 /*let username= 'Robert'; // variable string
 let age= 50; //variable number
 let person = { //object
@@ -118,10 +122,17 @@ if(hour >=6 && hour <=12){
 
 //callback function
 function dosomething(x){
+<<<<<<< HEAD
   return;
 }
 
 dosomething(myfunction())
+=======
+  return x();
+}
+
+document.write(dosomething(myfunction));
+>>>>>>> 5ec85684e9971697205e90910353a74d37520a89
 
 //javascript exercises for beginners
 // function check100(a,b){

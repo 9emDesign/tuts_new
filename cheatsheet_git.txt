@@ -32,12 +32,18 @@ git restore  [filename] - discarding local changes
 git restore --source={hash} [filename] - restore from earlier commit
 -------------------------------------------------------------------------------
 to push a local repo to remote repo:
+<<<<<<< HEAD
 username:pixl70
 !pass:90090501Pix! use personal access token
 Personal Access Token: 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 
 make repo on github.com
 then copy command: git remote add origin url(github repo)
 then git push -u origin master
+=======
+make repo on github.com
+then copy command: git remote add origin url(github repo)
+then git push origin master
+>>>>>>> 5ec85684e9971697205e90910353a74d37520a89
 -------------------------------------------------------------------------------
 merging and branching:
 git branch {branch name} - create a new branch
