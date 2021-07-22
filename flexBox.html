@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  </head>
+
+  <body>
+    <script>
+      $(document).ready(function () {
+        // Change background image of a div by clicking on the button
+        $("button").click(function () {
+          var imageUrl = "img/profile1.jpg";
+          $("#profile").css("background-image", "url(" + imageUrl + ")");
+        });
+      });
+    </script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        display: flex;
+        flex-direction: row;
+        /*justify-content: flex-end;*/
+        width: auto;
+        background-color: darkslategray;
+        height: 100%;
+        padding: 0 0 15px 0;
+      }
+
+      @media screen and (max-width: 750px) {
+        .container {
+          flex-direction: column;
+        }
+        .search {
+          display: none;
+        }
+      }
+
+      .button {
+        background-color: darkslategray;
+        color: white;
+        box-shadow: none;
+        width: 75px;
+        border-radius: 30px;
+        margin-top: 5px;
+        margin-left: 5px;
+        border: none;
+        cursor: pointer;
+        padding: 5px 0;
+      }
+
+      .button:hover {
+        background-color: #3b6161;
+        color: #b4b2b2;
+        box-shadow: none;
+      }
+
+      .products {
+        margin-right: auto;
+      }
+
+      /* .products {
+        margin-right: auto;
+        
+      } */
+
+      a:link {
+        color: #ff0000;
+        text-decoration: none;
+      }
+
+      /* visited link */
+      a:visited {
+        color: lightblue;
+      }
+
+      /* mouse over link */
+      a:hover {
+        color: #ff00ff;
+        text-decoration: underline;
+      }
+
+      .line {
+        border: 1px solid red;
+      }
+
+      /* .login {
+        border: 1px solid red;
+      } */
+
+      .box {
+        width: 250px;
+      }
+
+      input {
+        margin-right: 5px;
+        margin-top: 10px;
+        color: snow;
+      }
+
+      .box-style {
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        border-bottom-style: solid;
+        border-color: blueviolet;
+        background-color: #253f3f;
+      }
+
+      .no-outline:focus {
+        outline: none;
+      }
+
+      #profile {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 5px solid blueviolet;
+        z-index: 10;
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("img/profile.jpg");
+        margin: 25px 0 5px 10px;
+      }
+
+      .nav-group {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+        width: 300px;
+      }
+      .search {
+        margin-right: 50px;
+        margin-left: 175px;
+        flex-grow: 1.5;
+        width: 350px;
+      }
+      .login {
+        flex-grow: 2;
+      }
+    </style>
+    <div class="container">
+      <nav class="nav-group">
+        <div class="home">
+          <a href="#"><button class="button">home</button></a>
+        </div>
+        <div class="about">
+          <a href="#"><button class="button">about</button></a>
+        </div>
+        <div class="contact">
+          <a href="#"><button class="button">contact</button></a>
+        </div>
+        <div class="portfolio">
+          <a href="#"><button class="button">portfolio</button></a>
+        </div>
+        <div class="products">
+          <a href="#"><button class="button">products</button></a>
+        </div>
+      </nav>
+      <div class="search">
+        <input
+          class="box-style no-outline box"
+          type="text"
+          placeholder="Search Site"
+        /><input class="button" type="button" value="search" />
+      </div>
+      <div class="login">
+        <input
+          class="box-style no-outline"
+          type="text"
+          placeholder="Username"
+        /><input
+          class="box-style no-outline"
+          type="password"
+          placeholder="Password"
+        /><input class="button" type="button" value="submit" />
+      </div>
+    </div>
+    <div id="profile"></div>
+    <button type="button">change</button>
+  </body>
+</html>

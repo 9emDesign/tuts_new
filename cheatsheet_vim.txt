@@ -1,0 +1,133 @@
+selections:
+ctrl + v - visual block mode
+shift + v - visual line mode
+v - visual mode
+-----------------------------------------------------------------------------
+sessions:
+:mks ~/.vim/session/test.vim - to save  session (close nerdtree before saving!)
+vim -S ~/.vim/session/test.vim - to recall session
+:mks! ~/.vim/session/test.vim - to overwrite current saved session
+-----------------------------------------------------------------------------
+registers:
+:reg - to list registers
+:WipeReg - wipe clean register
+"0p -"9p - recall numbered registers
+"ap - zp" - recall letter registers
+"ap - recall register "a" and paste before cursor
+"aP - recall register "a" and paste after cursor
+shift+v "ay - yank the word  to the register "a"
+shift+v "a dd - delete text into register "a" (cut)
+shift+v "Ay - append to register "a""
+"a[3]yw - yank 3 words into register "a"
+"a[3]dw - delete 3 words into register "a" (cut)
+-----------------------------------------------------------------------------
+General commands:
+i - insert text at cursor position
+I - insert at start of line
+a - insert after cursor
+A - insert at the end of line
+o - insert a line below sentence
+O - insert a line above sentence
+s - remove character under cursor and insert text
+S - remove line and insert text
+w - forward to beginning of next word
+W - forward to beginning of next word with space
+b - backward to beginning of next word
+B - backward to beginning of next word with space
+e - forward to next end of word
+E - forward to next end of word with space
+C - remove characters till the end of line
+:tabnew - For a new tab
+:tabnew [filename] - For a new tab with  selected file (first :chdir)
+:tabm0 - moves tab to the front
+gT For previous tab
+gt For next tab
+[n]yw -  yank [3] words 
+:nohl - clears search highlight
+gq > - hard wordwrap
+0 - to the beginning of the line
+$ -  to the end of the line
+:[linenumber]# -takes you to the specified line nmber
+{ - move up a paragraph
+} - move down a paragraph
+( - move up a sentence
+) - move down a sentence
+ci<option> - change in option:w,",',t,{,<,(,[
+ctrl+w _ - maximizes current window
+ctrl+w = - equals windows
+:qa - quit all
+gi - to open in a split window and staying in nerdtree window
+w - copy word under cursor 
+b[n]yw - copy [3] words under cursor
+:sb [3] - split and open buffer number 3
+:b [buffer name or number] - open buffer [name] or buffer [number]
+:ls - list buffer
+:bd - buffer delete (closes buffer)
+:bp - buffer previous
+:bn - buffer next
+:badd [filename]- opens file without switching to new file
+L - last line
+M - middle line
+H - top line
+zz - center line
+zt - put line to top
+ctrl e -   down
+ctrl y -   up
+:MRU- most recent used files
+shift+v <tab> - surround new tag in emmet vim
+/[search name] - search
+:%s/search/replace/g - search and replace the whole file
+:%s/search/replace/gc - search and replace the whole file with confirm
+:4,7s/search/repace/g - search and replace between line number 4 -7
+NERDTree m - to show menu of selections nerdtree
+NERDTree cd - changes current directory to current working directory
+NERDTree i - opens selected file in  horizontal split buffer
+NERDTree gi -opens selected file in horizontal split buffer but leaves cursor
+in NERDTree 
+rm -rf [directory] - removes directory
+rm [file] - removes file
+u - undo
+gg - up to top of document
+G - down to end of doument
+-------------------------------------------------------------------------------
+clear window buffer(while maintaining window):
+:BD - buffer delete
+:BW - buffer wipe
+:BUN - bufferunload
+:BB - buffer back/previous
+:BF - buffer forward
+-------------------------------------------------------------------------------
+ctrl+t - indent
+ctrl+d - unindent
+zfat - manual folding of tags
+zo - open fold
+zc - close fold
+zR - open all folds
+zM = close all folds
+[[  ]] - markers for fold
+------------------------------------------------------------------------------
+ctrl+w L - move split window to right
+ctrl+w H - move split window to left
+ctrl+w j - move split window down
+ctrl+w K - move split window up
+------------------------------------------------------------------------------
+;CtrlPBuffer - opens ctrlp in buffer mode
+:CtrlPMRU - opens ctrlp in MRU mode
+:CtrlP - opens ctrlp in file mode
+:CtrlP [dir] - opens ctrlp in directory
+ctrl+p - controlp
+ctrl+x - open ctrl p in vertical window
+:CtrlP -> ctrl+t - open ctrl p in new tab 
+-----------------------------------------------------------------------------
+path vim8 - C:\Program Files\Git\usr\share\vim\vim81
+-----------------------------------------------------------------------------
+:e -  open vim files -  space then tab, then right arrow to select file
+:split - horizontal split
+:chdir - change directory
+-----------------------------------------------------------------------------
+vundle:
+plugin install - :PluginInstall
+plugin upate - :BundleUpdate
+-----------------------------------------------------------------------------
+emmet:
+html:5 tab
