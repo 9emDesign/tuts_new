@@ -30,6 +30,7 @@ rm -rf .git - removes .git hidden directory
 git restore --staged [filename] - restore file from staging area
 git restore  [filename] - discarding local changes
 git restore --source={hash} [filename] - restore from earlier commit
+git reset {hash} - restore from earlier commit
 -------------------------------------------------------------------------------
 to push a local repo to remote repo:
 make repo on github.com

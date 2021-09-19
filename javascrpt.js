@@ -1,9 +1,7 @@
-<<<<<<< HEAD
-import { myfunction } from "./function.js";
-=======
-//jshint esversion:6
->>>>>>> 5ec85684e9971697205e90910353a74d37520a89
-/*let username= 'Robert'; // variable string
+import { mytest } from "/function.js";
+
+mytest();
+/* let username= 'Robert'; // variable string
 let age= 50; //variable number
 let person = { //object
 firstName:'Zayno',
@@ -13,8 +11,8 @@ height:1.74
 console.log(username);
 console.log(age);
 console.log(person.firstName);
-console.log(person.height);*/
-
+console.log(person.height);
+ */
 //function to perform a task
 /*function greet() {
   document.write('hello javascript function');
@@ -121,18 +119,15 @@ if(hour >=6 && hour <=12){
 // document.write(names(me));
 
 //callback function
-function dosomething(x){
-<<<<<<< HEAD
+/* function dosomething(x){
   return;
 }
 
 dosomething(myfunction())
-=======
   return x();
 }
 
-document.write(dosomething(myfunction));
->>>>>>> 5ec85684e9971697205e90910353a74d37520a89
+document.write(dosomething(myfunction)); */
 
 //javascript exercises for beginners
 // function check100(a,b){
